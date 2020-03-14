@@ -12,7 +12,7 @@ Put this content to `docker-compose.yml` and fill variable env values:
 version: '3.7'
 services:
     clean-gitlab-backup:
-        image: docker.io/stephane-klein/clean-gitlab-backup
+        image: stephaneklein/clean-gitlab-backup
         environment:
             START_EVERY_DAY_AT_UTC: '02:00'
             NUMBER_BACKUP_TO_KEEP: 2

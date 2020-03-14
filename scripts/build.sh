@@ -5,4 +5,4 @@ cd "$(dirname "$0")/../"
 
 export DOCKER_BUILDKIT=1
 
-docker build . -t stephane-klein/clean-gitlab-backup:latest
+docker build . -t stephaneklein/clean-gitlab-backup:latest

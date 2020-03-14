@@ -3,4 +3,4 @@ set -e
 
 cd "$(dirname "$0")/../"
 
-docker push stephane-klein/clean-gitlab-backup:latest
+docker push stephaneklein/clean-gitlab-backup:latest
