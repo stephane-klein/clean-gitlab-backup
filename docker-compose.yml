@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+    clean-gitlab-backup:
+        build: .
+        command: sleep 1000d
+        environment:
+            START_EVERY_DAY_AT_UTC: '14:00'
+            NUMBER_BACKUP_TO_KEEP: 2
+            S3_REGION_NAME: 'fr-par'
+            S3_ENDPOINT_URL: https://s3.fr-par.scw.cloud
+            S3_AWS_ACCESS_KEY_ID: 
+            S3_AWS_SECRET_ACCESS_KEY: 
+            S3_BUCKET_NAME: 
+        volumes:
+            - ./:/src/
